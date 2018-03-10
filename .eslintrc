@@ -1,0 +1,22 @@
+{
+  "env": {
+    "mocha": true,
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "globals": {
+    "expect": true,
+    "sinon": true,
+    "global": true,
+    "Symbol": true
+  },
+  "rules": {
+    "camelcase": 1
+  },
+  "extends": [
+    "mongodb-js/browser"
+  ]
+}

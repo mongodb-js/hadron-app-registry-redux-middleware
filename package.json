@@ -1,0 +1,67 @@
+{
+  "name": "hadron-app-registry-redux-middleware",
+  "version": "1.0.0",
+  "description": "Redux middleware for interfacing with the Hadron App Registry",
+  "main": "lib/hadron-app-registry-redux-middleware.js",
+  "scripts": {
+    "check": "mongodb-js-precommit './src/**/*{.js,.jsx}'",
+    "clean": "rimraf lib",
+    "compile": "cross-env NODE_ENV=production webpack --config ./config/webpack.prod.config.js --progress",
+    "precompile": "npm run clean",
+    "test": "cross-env NODE_ENV=test mocha-webpack \"./src/**/*.spec.js\"",
+    "test:coverage": "nyc npm run test && nyc report --reporter=lcov",
+    "test:watch": "cross-env NODE_ENV=test mocha-webpack \"./src/**/*.spec.js\" --watch"
+  },
+  "precommit": [
+    "check"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mongodb-js/hadron-app-registry-redux-middleware.git"
+  },
+  "keywords": [
+    "hadron-app-registry",
+    "redux",
+    "middleware"
+  ],
+  "author": "Matt Fairbrass <matt.fairbrass@mongodb.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mongodb-js/hadron-app-registry-redux-middleware/issues"
+  },
+  "homepage": "https://github.com/mongodb-js/hadron-app-registry-redux-middleware#readme",
+  "peerDependencies": {
+    "hadron-app-registry": "^7.1.0",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.40",
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-stage-2": "^7.0.0-beta.40",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "chai": "^4.1.2",
+    "cross-env": "^5.1.4",
+    "eslint-config-mongodb-js": "^2.3.0",
+    "istanbul-instrumenter-loader": "^3.0.0",
+    "jsdom": "^11.6.2",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.0.4",
+    "mocha-webpack": "^1.0.1",
+    "mongodb-js-precommit": "^0.4.0",
+    "nyc": "^11.4.1",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^2.6.2",
+    "sinon": "^4.4.2",
+    "sinon-chai": "^3.0.0",
+    "uglifyjs-webpack-plugin": "^1.2.2",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.2",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "hadron-app-registry": "^7.1.0",
+    "redux": "^3.7.2"
+  }
+}
