@@ -12,6 +12,10 @@
  * @returns {Object} - the result of the next action.
  **/
 const hadronAppRegistryReduxMiddleware = (appRegistry, eventsToActions = {}, actionsToEvents = {}) => {
+  if (!appRegistry) {
+    throw Error('An instance of the hadron-app-registry was not provided to the hadron-app-registry-redux-middleware');
+  }
+
   const onEventDispatchAction = (dispatch, actionType, eventName, error, ...args) => {
     return error
       ? dispatch({ type: actionType, payload: error, error: true, meta: { appRegistryEvent: eventName } })
