@@ -12,11 +12,11 @@ const config = {
         test: /\.(js|jsx)/,
         enforce: 'post', // Enforce as a post step so babel can do its compilation prior to instrumenting code
         exclude: [
-          /config/,
           /node_modules/,
-          /.*?(?=\.spec).*?\.js/,
+          /config/,
+          /lib/,
           /.tmp/,
-          /lib/
+          /\.spec\.js$/
         ],
         include: project.path.src,
         use: {
