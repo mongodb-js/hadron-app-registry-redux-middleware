@@ -8,8 +8,8 @@
     "clean": "rimraf lib",
     "compile": "cross-env NODE_ENV=production webpack --config ./config/webpack.prod.config.js --progress",
     "precompile": "npm run clean",
-    "test": "cross-env NODE_ENV=test mocha-webpack \"./src/**/*.spec.js\"",
-    "test:coverage": "cross-env nyc npm run test && nyc report --reporter=lcov",
+    "test": "cross-env nyc npm run test:single && nyc report --reporter=lcov",
+    "test:single": "cross-env NODE_ENV=test mocha-webpack \"./src/**/*.spec.js\"",
     "test:watch": "cross-env NODE_ENV=test mocha-webpack \"./src/**/*.spec.js\" --watch"
   },
   "precommit": [
