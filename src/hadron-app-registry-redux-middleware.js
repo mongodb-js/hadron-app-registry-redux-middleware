@@ -1,9 +1,9 @@
 /**
- * A Redux middleware which wraps the Hadron App Registry to facilitate the integration between
- * hadron app components which may use different store implementations (eg: Reflux).
+ * Redux middleware which wraps the Hadron App Registry to facilitate the integration between
+ * Hadron App components which may use different state or store implementations (eg: Reflux, MobX).
  *
- * The middleware automatically listens to relevant Hadron App Registry events and dispatches them as redux actions,
- * and also intercepts relevant dispatched Redux actions and emits them as events to the Hadron App Registry.
+ * The middleware listens to relevant Hadron App Registry events and dispatches them as Redux actions.
+ * It is also able to intercept relevant dispatched Redux actions and emit them as events in the Hadron App Registry.
  *
  * @param {Object} appRegistry - the Hadron App Registry instance
  * @param {Object} eventsToActions - an object mapping appRegistry event names (key) to Redux action types (value)
