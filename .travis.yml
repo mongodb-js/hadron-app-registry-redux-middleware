@@ -1,0 +1,18 @@
+sudo: required
+dist: trusty
+language: node_js
+node_js:
+- 7.4
+env:
+  global:
+  - COMMIT=${TRAVIS_COMMIT::8}
+  - BRANCH=${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}
+before_install:
+- echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> .npmrc
+- npm i -g npm@5
+before_script:
+- npm run check
+script: npm run test -- --interactive false
+cache:
+  directories:
+  - node_modules
