@@ -1,0 +1,19 @@
+.Button {
+  background-color: transparent;
+  border: 4px #fff solid;
+  height: 52px;
+  border-radius: 52px;
+  color: #fff;
+  margin: 1rem;
+  padding: 10px 20px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.2s ease-out;
+}
+
+.Button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #FF69B4;
+  transition: all 0.2s ease-in;
+}

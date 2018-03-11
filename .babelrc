@@ -1,0 +1,16 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": { "browsers": ["last 2 versions", "safari >= 7"] },
+        "modules": false
+      }
+    ],
+    "@babel/preset-stage-2",
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-object-rest-spread",
+    "@babel/transform-spread"
+  ]
+}

@@ -55,6 +55,20 @@ let store = createStore(
 );
 ```
 
+## Demo Example
+
+This project also includes an example demonstrating the middleware in action:
+
+![][demo_img]
+
+To run the demo, clone this project and execute the following:
+
+```bash
+$: cd ./examples/react
+$: npm install
+$: npm start
+```
+
 ## Change Log
 
 This project adheres to [Semantic Versioning](http://semver.org/).
@@ -66,3 +80,4 @@ Apache 2.0
 
 [travis_img]: https://img.shields.io/travis/mongodb-js/hadron-app-registry-redux-middleware.svg?style=flat-square
 [travis_url]: https://travis-ci.org/mongodb-js/hadron-app-registry-redux-middleware
+[demo_img]: demo.gif
