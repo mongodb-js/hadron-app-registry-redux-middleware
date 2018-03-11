@@ -33,14 +33,12 @@ const appRegistry = new AppRegistry();
 
 // map appRegistry event names (key) to Redux action types (value)
 const eventsToActions = {
-  'foo-event': 'FOO',
-  'bar-event': 'BAR'
+  'foo': 'BAR'
 };
 
 // map Redux action types (key) to appRegistry event names (value)
 const actionsToEvents = {
-  'FIZZ': 'fizz-event',
-  'BUZZ': 'buzz-event'
+  'FIZZ': 'buzz'
 };
 
 let store = createStore(
