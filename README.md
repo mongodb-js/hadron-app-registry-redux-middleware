@@ -1,4 +1,5 @@
 # hadron-app-registry-redux-middleware
+[![][travis_img]][travis_url]
 
 [Redux](https://redux.js.org) middleware which wraps the [Hadron App Registry](https://github.com/mongodb-js/hadron-app-registry) to facilitate the integration between Hadron App components which may use different state or store implementations (eg: [Reflux](https://github.com/reflux/refluxjs), [MobX](https://github.com/mobxjs/mobx)).
 
@@ -62,3 +63,6 @@ Every release, along with the migration instructions, is documented on the Githu
 ## License
 
 Apache 2.0
+
+[travis_img]: https://img.shields.io/travis/mongodb-js/hadron-app-registry-redux-middleware.svg?style=flat-square
+[travis_url]: https://travis-ci.org/mongodb-js/hadron-app-registry-redux-middleware
