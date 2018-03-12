@@ -1,5 +1,5 @@
 # hadron-app-registry-redux-middleware
-[![][travis_img]][travis_url]
+[![][travis_img]][travis_url] [![][github_issues_img]][github_issues_url] [![github_forks_img]][github_forks_url] [![github_stars_img]][github_stars_url] [![][license_img]][license_url] 
 
 [Redux](https://redux.js.org) middleware which wraps the [Hadron App Registry](https://github.com/mongodb-js/hadron-app-registry) to facilitate the integration between Hadron App components which may use different state or store implementations (eg: [Reflux](https://github.com/reflux/refluxjs), [MobX](https://github.com/mobxjs/mobx)).
 
@@ -76,6 +76,19 @@ Every release, along with the migration instructions, is documented on the Githu
 
 Apache 2.0
 
+[license_img]: https://img.shields.io/github/license/mongodb-js/hadron-app-registry-redux-middleware.svg
+[license_url]: https://github.com/mongodb-js/hadron-app-registry-redux-middleware/blob/master/LICENSE
+
+[github_issues_img]: https://img.shields.io/github/issues/mongodb-js/hadron-app-registry-redux-middleware.svg
+[github_issues_url]: https://github.com/mongodb-js/hadron-app-registry-redux-middleware/issues
+
+[github_forks_img]: https://img.shields.io/github/forks/mongodb-js/hadron-app-registry-redux-middleware.svg
+[github_forks_url]: https://github.com/mongodb-js/hadron-app-registry-redux-middleware/network
+
+[github_stars_img]: https://img.shields.io/github/stars/mongodb-js/hadron-app-registry-redux-middleware.svg
+[github_stars_url]: https://github.com/mongodb-js/hadron-app-registry-redux-middleware/stargazers
+
 [travis_img]: https://img.shields.io/travis/mongodb-js/hadron-app-registry-redux-middleware.svg?style=flat-square
 [travis_url]: https://travis-ci.org/mongodb-js/hadron-app-registry-redux-middleware
+
 [demo_img]: demo.gif
