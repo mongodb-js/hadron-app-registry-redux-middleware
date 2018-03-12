@@ -1,6 +1,6 @@
 {
   "name": "@mongodb-js/hadron-app-registry-redux-middleware",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Redux middleware for interfacing with the Hadron App Registry",
   "main": "lib/hadron-app-registry-redux-middleware.js",
   "module": "src/index.js",
